@@ -44,10 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Jake Assets\Player1script.cs" />
-     <Compile Include="Assets\Jake Assets\Player2script.cs" />
-     <Compile Include="Assets\Jake Assets\Player3script.cs" />
-     <Compile Include="Assets\Jake Assets\Player4script.cs" />
+     <Compile Include="Assets\Jake Assets\Scripts\CollideScript.cs" />
+     <Compile Include="Assets\Jake Assets\Scripts\Player1script.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
