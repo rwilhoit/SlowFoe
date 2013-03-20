@@ -4,4 +4,7 @@
 Library/
 Temp
 *.pidb
-build
+Build
+*.sln
+*.csproj
+*.userprefs
