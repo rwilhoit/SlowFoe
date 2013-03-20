@@ -5,3 +5,5 @@ Library/
 Temp
 *.pidb
 build
+*.sln
+*.csproj
