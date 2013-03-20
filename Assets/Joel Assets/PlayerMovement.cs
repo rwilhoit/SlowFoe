@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Player1script : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour {
 
 	public float moveVar = 10;
 	public float turnVar = 200;
