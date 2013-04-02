@@ -24,18 +24,32 @@ public class EnemyScript : MonoBehaviour {
 
 	}
 	
+	void OnTriggerStay (Collider colliderInfo) {
+		Debug.Log(colliderInfo);
+		if(colliderInfo.tag == "Collider3")
+			FollowPlayer();
+	}
+	
 	void OnTriggerExit (Collider colliderInfo) {
-		//	target = null;
+
+	}
+	
+	void FollowPlayer () {
+		if(target != null) {
+			Debug.Log("Target position: " + target.position);
+			Debug.Log("myTransform position: " + myTransform.position);
+			
+		    myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
+		    Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
+		 
+		    //move towards the player
+		    myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
+		}
 	}
 	 
 	void Update () {
 	    //rotate to look at the player
-	    myTransform.rotation = Quaternion.Slerp(myTransform.rotation,
-	    Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed*Time.deltaTime);
-	 
-	    //move towards the player
-	    myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
-	 
-	 
-}
+		
+		
+	}
 }
