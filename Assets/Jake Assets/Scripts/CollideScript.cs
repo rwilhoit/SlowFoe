@@ -16,7 +16,7 @@ public class CollideScript : MonoBehaviour {
 		
         foreach (ContactPoint contact in collision.contacts) {
 			
-			Debug.Log ("Collision this is: " + contact.thisCollider);
+			//Debug.Log ("Collision this is: " + contact.thisCollider);
 			if(collision.gameObject.tag == "Enemy") {
             	Debug.Log("Collision on enemy");
 			}
@@ -30,9 +30,9 @@ public class CollideScript : MonoBehaviour {
 		if(colliderInfo.gameObject.tag == "Enemy")
 			Debug.Log("Trigger on Enemy");
 		
-			GameObject player1 = GameObject.Find ("Collider1");
-			TestScript testScript = player1.GetComponent<TestScript>();
-			enemyPos = testScript.GetEnemyPos();
+			//GameObject player1 = GameObject.Find ("Collider1");
+			//TestScript testScript = player1.GetComponent<TestScript>();
+			//enemyPos = testScript.GetEnemyPos();
 	}
 	
 	public Vector3 GetEnemyPos() {

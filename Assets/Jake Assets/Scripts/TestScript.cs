@@ -24,18 +24,18 @@ public class TestScript : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider colliderInfo) {
 		if(colliderInfo.gameObject.tag == "Enemy") {
-			Debug.Log("Test script Trigger on Enemy");
-			Debug.Log(colliderInfo.gameObject.rigidbody.position);
+			//Debug.Log("Test script Trigger on Enemy");
+			//Debug.Log(colliderInfo.gameObject.rigidbody.position);
 			
 			GameObject player1 = GameObject.Find ("SphereAI");
-			Player1script player1script = player1.GetComponent<Player1script>();
-			player1script.MoveTowardsEnemy();		
+			//Player1script player1script = player1.GetComponent<Player1script>();
+			//player1script.MoveTowardsEnemy();		
 		}
 	}
 	
 	void OnTriggerStay(Collider colliderInfo) {
 		if(colliderInfo.gameObject.tag == "Enemy") {
-			Debug.Log(colliderInfo.gameObject.rigidbody.position);
+			//Debug.Log(colliderInfo.gameObject.rigidbody.position);
 			enemyPos = colliderInfo.gameObject.rigidbody.position;
 		}
 		

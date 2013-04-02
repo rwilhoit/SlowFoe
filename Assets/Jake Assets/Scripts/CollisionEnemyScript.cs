@@ -27,7 +27,7 @@ public class CollisionEnemyScript : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider colliderInfo)	{
 		
-		//Debug.Log(colliderInfo.gameObject.tag);
+		Debug.Log("CollisionEnemyScript: " + colliderInfo.gameObject.transform.parent.gameObject.transform.position);
 		
 		if(colliderInfo.gameObject.tag == "Collider1") {
 			updateColor(collider1Color);
@@ -42,7 +42,9 @@ public class CollisionEnemyScript : MonoBehaviour {
 	
     void OnTriggerStay(Collider colliderInfo) {
 		
-		
+		//log current position of player in while in collider
+		Debug.Log("CollisionEnemyScript: " + colliderInfo.gameObject.transform.parent.gameObject.transform.position);
+
     }
 	
 	void OnTriggerExit(Collider colliderInfo) {
