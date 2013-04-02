@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Joel Assets\Scripts\Player4Move.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Jake Assets/Scripts/Player1script.cs">
     <Files>
-      <File FileName="Assets\Joel Assets\Scripts\Player4Move.cs" Line="1" Column="1" />
-      <File FileName="Assets\Jake Assets\Scripts\CollideScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Jake Assets/Scripts/Player1script.cs" Line="9" Column="2" />
+      <File FileName="Assets/Jake Assets/Scripts/CollideScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Jake Assets/Scripts/CollisionEnemyScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Jake Assets/Scripts/TestScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Jake Assets/Scripts/EnemyScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
